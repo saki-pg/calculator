@@ -1,0 +1,54 @@
+
+
+  table {
+    width: 450px;
+    height: 350px;
+    text-align: center;
+    padding: 8px;
+    margin: 20px;
+    background-color: #ffffff;
+  }
+
+  input {
+    width: 100px;
+    height: 50px;
+    font-size: x-large;
+    background-color: #ededed;
+    border: solid 1px #261f1e;
+    border-radius: 5px;
+  }
+  
+  .display {
+    width: 90%;
+    text-align: right; 
+    color: #ffffff;
+    background: #261f1e;
+  }
+  
+  .operator {
+    background-color: #ededed;
+  }
+  .equal {
+    width: 210px;
+    background-color: #ededed;
+  }
+  .ac {
+    width: 210px;
+  }
+  
+  input:hover {
+    background: #747373b9;
+  }
+  .display:hover {
+    background: #261f1e; 
+  }
+  .operator:hover {
+    background: #339cdd;
+  }
+
+  input:active {
+    background:  #5a5a5a;
+  }
+  .operator:active {
+    background: #2c80b4;
+  }
