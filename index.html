@@ -7,56 +7,47 @@
   </head>
    
   <body>
-    <form name="dentaku">
-      <table>
-        <!-- 液晶画面 -->
-        <tr>
-          <td colspan="4">
-            <input type="text" class="display" name="display" value="" disabled>
-          </td>
-        </tr>
-   
-        <!-- 1段目-->
-        <tr>
-          <td><input type="button" value="7" onclick="get_calc(this)"></td>
-          <td><input type="button" value="8" onclick="get_calc(this)"></td>
-          <td><input type="button" value="9" onclick="get_calc(this)"></td>
-          <td><input type="button" value="+" class="operator" onclick="get_calc(this)"></td>
-        </tr>
-          
-        <!-- 2段目 -->
-        <tr>
-          <td><input type="button" value="4" onclick="get_calc(this)"></td>
-          <td><input type="button" value="5" onclick="get_calc(this)"></td>
-          <td><input type="button" value="6" onclick="get_calc(this)"></td>
-          <td><input type="button" value="-" class="operator" onclick="get_calc(this)"></td>
-        </tr>
-   
-        <!-- 3段目 -->
-        <tr>
-          <td><input type="button" value="1" onclick="get_calc(this)"></td>
-          <td><input type="button" value="2" onclick="get_calc(this)"></td>
-          <td><input type="button" value="3" onclick="get_calc(this)"></td>
-          <td><input type="button" value="*" class="operator" name="multi_btn" onclick="get_calc(this)"></td>
-        </tr>
-   
-        <!-- 4段目 -->
-        <tr>
-          <td><input type="button" value="0" onclick="get_calc(this)"></td>
-          <td><input type="button" value="00" onclick="get_calc(this)"></td>
-          <td><input type="button" value="." onclick="get_calc(this)"></td>
-          <td><input type="button" value="/" class="operator" name="div_btn" onclick="get_calc(this)"></td>
-        </tr>  
-        
-        <!--5段目-->
-        <tr>
-          <td colspan="2"><input type="button" value="AC" class="ac" onclick="get_calc(this)"></td>
-          <td colspan="2"><input type="button" value="=" class="equal" onclick="get_calc(this)"></td>
-        </tr>
-   
-      </table>
-    </form>
-    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
-    <script src="main.js" type="text/javascript" charset="utf-8"></script>
+
+  <div class="wrapper">
+    <div id="calc">
+      
+      <div>
+        <input readonly id="result" type="text" value="0">
+      </div>
+      
+      <div>
+        <button onclick="num_click(this.innerHTML)">7</button>
+        <button onclick="num_click(this.innerHTML)">8</button>
+        <button onclick="num_click(this.innerHTML)">9</button>
+        <button onclick="ope_click(this.innerHTML)">+</button>
+      </div>
+      <div>
+        <button onclick="num_click(this.innerHTML)">4</button>
+        <button onclick="num_click(this.innerHTML)">5</button>
+        <button onclick="num_click(this.innerHTML)">6</button>
+        <button onclick="ope_click(this.innerHTML)">-</button>
+      </div>
+      <div>
+        <button onclick="num_click(this.innerHTML)">1</button>
+        <button onclick="num_click(this.innerHTML)">2</button>
+        <button onclick="num_click(this.innerHTML)">3</button>
+        <button onclick="ope_click(this.innerHTML)">×</button>
+      </div>
+      <div>
+        <button onclick="num_click(this.innerHTML)">0</button>
+        <button onclick="num_click(this.innerHTML)">.</button>
+        <button onclick="equal_click()">=</button>
+        <button onclick="ope_click(this.innerHTML)">÷</button>
+      </div>
+      <div>
+        <button onclick="ac_click()" class="ac">AC</button>
+      </div>
+      
+      
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+  <script src="main.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>
