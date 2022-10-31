@@ -1,54 +1,41 @@
+@charset "utf-8";
+/*全体*/
+.wrapper{
+  max-width: 350px;
+  margin: 0 auto;
+  color: #666;
+}
 
+#calc{
+  box-sizing: border-box;
+  text-align: center;
+}
 
-  table {
-    width: 450px;
-    height: 350px;
-    text-align: center;
-    padding: 8px;
-    margin: 20px;
-    background-color: #ffffff;
-  }
+/*テキスト*/
+input{
+  box-sizing: border-box;
+  width: 75%;
+  height: 3.5rem;
+  font-size: 1.6rem;
+  text-align: right;
+  padding: 0 0.75rem;
+  margin-bottom: 30px;
+}
 
-  input {
-    width: 100px;
-    height: 50px;
-    font-size: x-large;
-    background-color: #ededed;
-    border: solid 1px #261f1e;
-    border-radius: 5px;
-  }
-  
-  .display {
-    width: 90%;
-    text-align: right; 
-    color: #ffffff;
-    background: #261f1e;
-  }
-  
-  .operator {
-    background-color: #ededed;
-  }
-  .equal {
-    width: 210px;
-    background-color: #ededed;
-  }
-  .ac {
-    width: 210px;
-  }
-  
-  input:hover {
-    background: #747373b9;
-  }
-  .display:hover {
-    background: #261f1e; 
-  }
-  .operator:hover {
-    background: #339cdd;
-  }
+/*ボタン関係*/
+button{
+  font-size: 18px;
+  width: 20%;
+  height: 3.5rem;
+  color: #333;
+  vertical-align: middle;
+  border-color: #fff;
+}
 
-  input:active {
-    background:  #5a5a5a;
-  }
-  .operator:active {
-    background: #2c80b4;
-  }
+.ac {
+  width: 85%;
+}
+
+button:hover{
+  background-color: #ddd;
+}
